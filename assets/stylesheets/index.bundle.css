@@ -3442,8 +3442,7 @@ body {
   margin: 0; }
 
 html {
-  background-color: whitesmoke;
-  background-image: repeating-linear-gradient(135deg, rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px, rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px), repeating-linear-gradient(45deg, rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px, rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px);
+  background-image: repeating-linear-gradient(135deg, #9d96c0 0px, #9d96c0 35px, #13131c 35px, #13131c 36px, #c7c3dc 36px, #c7c3dc 70px);
   font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif; }
 
 .copyright {

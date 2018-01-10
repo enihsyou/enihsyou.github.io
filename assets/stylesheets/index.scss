@@ -12,16 +12,22 @@ body {
 html {
     //background: url('../images/nat-pants.png');
 
-    background-color: whitesmoke;
+    //background-color: whitesmoke;
+    //background-image: repeating-linear-gradient(135deg, transparent 5px,
+    //    rgba(157, 150, 192, 0.9) 0px, rgba(157, 150, 192, 0.9) 35px,
+    //    //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
+    //    rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
+    //), repeating-linear-gradient(45deg,
+    //        rgba(157, 150, 192, 0.9) 0px, rgba(157, 150, 192, 0.9) 35px,
+    //        //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
+    //        rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
+    //);
     background-image: repeating-linear-gradient(135deg,
-        rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px,
-        //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
-        rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
-    ), repeating-linear-gradient(45deg,
-            rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px,
-            //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
-            rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
+        rgb(157, 150, 192) 0px, rgb(157, 150, 192) 35px,
+        rgb(19, 19, 28) 35px, rgb(19, 19, 28) 36px,
+        rgb(199, 195, 220) 36px, rgb(199, 195, 220) 70px
     );
+
 
     font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
 }
