@@ -10,7 +10,19 @@ body {
 }
 
 html {
-    background: url('../images/nat-pants.png');
+    //background: url('../images/nat-pants.png');
+
+    background-color: whitesmoke;
+    background-image: repeating-linear-gradient(135deg,
+        rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px,
+        //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
+        rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
+    ), repeating-linear-gradient(45deg,
+            rgba(157, 150, 192, 0.5) 0px, rgba(157, 150, 192, 0.5) 35px,
+            //rgba(19, 19, 28, 0.5) 35px, rgba(19, 19, 28, 0.5) 36px,
+            rgba(199, 195, 220, 0.5) 36px, rgba(199, 195, 220, 0.5) 70px
+    );
+
     font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif;
 }
 
@@ -54,6 +66,7 @@ html {
     text-decoration: none;
     transition: all 200ms;
 }
+
 .hosting .link:hover, .theme .link:hover {
     color: #e7d7f4;
     transition: all 200ms;
