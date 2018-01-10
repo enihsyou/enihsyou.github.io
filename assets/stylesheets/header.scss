@@ -25,11 +25,13 @@
     position: relative;
     margin: 1.2em 0;
     vertical-align: bottom;
-    transition: all 200ms;
+    transition-duration: 200ms;
 }
-.header .labels .label:hover{
+
+.header .labels .label:hover {
     box-shadow: 0 0 2em #333333;
 }
+
 .header .labels a.label {
     text-decoration: none;
 }
@@ -60,7 +62,8 @@
     display: block;
     padding: 3%;
     width: 94%;
-    transition: all 100ms ease-in-out;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out;
 }
 
 .header .picture:hover {
