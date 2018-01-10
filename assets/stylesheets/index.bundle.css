@@ -3435,7 +3435,7 @@
   vertical-align: -.5em; }
 
 .chem-element[element="potassium"]:hover {
-  background: #7169A1; }
+  background: #8FA0B9; }
 
 body {
   font-size: 1em;
@@ -3450,12 +3450,13 @@ html {
   color: #ddd;
   font-size: 0.9em;
   line-height: 2em;
-  padding: 0.5em 1em; }
+  padding: 0.5em 1em;
+  clear: both; }
 
 .header .greeting .chem-element {
   text-decoration: none; }
 
-.hosting {
+.host {
   background: #A890BC;
   color: #eee;
   font-size: 0.9em;
@@ -3464,8 +3465,24 @@ html {
   padding: 0.75em 1em;
   text-decoration: none; }
 
-.hosting .link {
-  color: #CEBFDA; }
+.hosting {
+  padding: 0.75em 1em;
+  color: #eee;
+  text-decoration: none; }
+
+.theme {
+  float: right;
+  margin-left: auto;
+  margin-right: 0; }
+
+.hosting .link, .theme .link {
+  color: #CEBFDA;
+  text-decoration: none;
+  transition: all 200ms; }
+
+.hosting .link:hover, .theme .link:hover {
+  color: #e7d7f4;
+  transition: all 200ms; }
 
 .main-container {
   margin: 0 auto;

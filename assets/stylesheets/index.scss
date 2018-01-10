@@ -1,9 +1,7 @@
 @import "../../bower_components/font-awesome/scss/font-awesome.scss";
 @import "../../bower_components/unsemantic/assets/sass/unsemantic-grid-responsive.scss";
-
 @import "header.scss";
 @import "identities.scss";
-
 @import "chem-elements.scss";
 
 body {
@@ -22,13 +20,14 @@ html {
     font-size: 0.9em;
     line-height: 2em;
     padding: 0.5em 1em;
+    clear: both;
 }
 
 .header .greeting .chem-element {
     text-decoration: none;
 }
 
-.hosting {
+.host {
     background: #A890BC;
     color: #eee;
     font-size: 0.9em;
@@ -38,8 +37,26 @@ html {
     text-decoration: none;
 }
 
-.hosting .link {
+.hosting {
+    padding: 0.75em 1em;
+    color: #eee;
+    text-decoration: none;
+}
+
+.theme {
+    float: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.hosting .link, .theme .link {
     color: #CEBFDA;
+    text-decoration: none;
+    transition: all 200ms;
+}
+.hosting .link:hover, .theme .link:hover {
+    color: #e7d7f4;
+    transition: all 200ms;
 }
 
 .main-container {
@@ -56,6 +73,6 @@ html {
     margin: 1em 0;
 }
 
-.identity .where{
+.identity .where {
     text-transform: capitalize;
 }
