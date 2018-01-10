@@ -3321,7 +3321,11 @@
   padding: .5em .75em;
   position: relative;
   margin: 1.2em 0;
-  vertical-align: bottom; }
+  vertical-align: bottom;
+  transition: all 200ms; }
+
+.header .labels .label:hover {
+  box-shadow: 0 0 2em #333333; }
 
 .header .labels a.label {
   text-decoration: none; }
@@ -3348,7 +3352,11 @@
   box-sizing: content-box;
   display: block;
   padding: 3%;
-  width: 94%; }
+  width: 94%;
+  transition: all 100ms ease-in-out; }
+
+.header .picture:hover {
+  transform: rotate(7deg); }
 
 .header .picture-container {
   padding: 2em; }
