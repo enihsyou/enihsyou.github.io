@@ -4,7 +4,7 @@
     box-shadow: 0 0 0.1em 0.1em rgba(0,0,0,.05);
     color: #fff;
     margin-right: .1em;
-    padding: .35em .1em .35em .35em;
+    padding: .25em .15em .25em .25em;
     transition-duration: .5s;
 }
 
@@ -13,13 +13,12 @@
     transform: translate(1em,1em);
 }
 
-
-.chem-element[element=sodium]::before {
-    content: '11';
+.chem-element[element=potassium]::before {
+    content: '19';
     font-size: .45em;
     vertical-align: -.5em;
 }
 
-.chem-element[element="sodium"]:hover {
-    background: #faa3a3;
+.chem-element[element="potassium"]:hover {
+    background: #7169A1;
 }

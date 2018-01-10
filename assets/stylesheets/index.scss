@@ -17,7 +17,7 @@ html {
 }
 
 .copyright {
-    background: #2b5045;
+    background: #82629C;
     color: #ddd;
     font-size: 0.9em;
     line-height: 2em;
@@ -29,7 +29,7 @@ html {
 }
 
 .hosting {
-    background: #38685a;
+    background: #A890BC;
     color: #eee;
     font-size: 0.9em;
     font-weight: normal;
@@ -39,7 +39,7 @@ html {
 }
 
 .hosting .link {
-    color: #acd;
+    color: #CEBFDA;
 }
 
 .main-container {
@@ -54,4 +54,8 @@ html {
 .section {
     box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
     margin: 1em 0;
+}
+
+.identity .where{
+    text-transform: capitalize;
 }

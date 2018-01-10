@@ -5,14 +5,14 @@
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amphineko/amphineko.git"
+    "url": "git+https://github.com/enihsyou/enihsyou.github.io.git"
   },
-  "author": "Naoki Rinmous <sukareki@gmail.com>",
+  "author": "Kujyo Ryoka <enihsyou@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/amphineko/amphineko/issues"
+    "url": "https://github.com/enihsyou/enihsyou.github.io/issues"
   },
-  "homepage": "https://futa.moe/amphineko/",
+  "homepage": "https://enihsyou.github.com",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.1",
