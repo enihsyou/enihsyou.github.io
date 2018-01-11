@@ -3436,7 +3436,7 @@
   vertical-align: -.5em; }
 
 .chem-element[element="potassium"]:hover {
-  background: #bea19d; }
+  background: rgba(190, 161, 157, 0.45); }
 
 body {
   font-size: 1em;
