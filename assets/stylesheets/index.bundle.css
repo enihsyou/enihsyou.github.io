@@ -3309,6 +3309,9 @@
   margin: 0;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); }
 
+.header .greeting .chem-element {
+  text-decoration: none; }
+
 .header .labels {
   margin: 0.8em 0; }
 
@@ -3345,7 +3348,10 @@
 .header .labels .label .content {
   color: #ccc; }
 
-.header .picture {
+.header .picture-container {
+  padding: 2em; }
+
+.header .picture-container .picture {
   background: white;
   border-radius: 50%;
   box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.15);
@@ -3356,11 +3362,20 @@
   transition-duration: 100ms;
   transition-timing-function: ease-in-out; }
 
-.header .picture:hover {
+.header .picture-container .picture:hover {
   transform: rotate(7deg); }
 
-.header .picture-container {
-  padding: 2em; }
+.header .picture-container .name {
+  color: whitesmoke;
+  width: 100%;
+  margin-top: 1em;
+  text-align: center; }
+
+.header .picture-container .name ruby {
+  transition-duration: 300ms; }
+
+.header .picture-container .name ruby:hover {
+  text-shadow: 0 0 .1em whitesmoke; }
 
 .identity {
   border-bottom: 0.15em solid rgba(0, 0, 0, 0.035);
@@ -3443,8 +3458,8 @@ body {
   margin: 0; }
 
 html {
-  background-image: repeating-linear-gradient(135deg, #9d96c0 0px, #9d96c0 35px, #13131c 35px, #13131c 36px, #c7c3dc 36px, #c7c3dc 70px);
-  font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "Helvetica Neue", Helvetica, Arial, PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, sans-serif; }
+  background-image: repeating-linear-gradient(135deg, #9d96c0 0px, #9d96c0 35px, #13131c 35px, #c7c3dc 36px, #c7c3dc 70px);
+  font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .copyright {
   background: #82629C;
@@ -3453,9 +3468,6 @@ html {
   line-height: 2em;
   padding: 0.5em 1em;
   clear: both; }
-
-.header .greeting .chem-element {
-  text-decoration: none; }
 
 .host {
   background: #A890BC;
@@ -3496,6 +3508,13 @@ html {
 
 .identity .where {
   text-transform: capitalize; }
+
+.fa-heart-o {
+  transition-duration: 150ms; }
+
+.fa-heart-o:hover {
+  color: palevioletred;
+  transition-duration: 150ms; }
 
 .shake {
   display: inline-block;

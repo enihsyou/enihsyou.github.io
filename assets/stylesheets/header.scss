@@ -11,6 +11,10 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
 }
 
+.header .greeting .chem-element {
+    text-decoration: none;
+}
+
 .header .labels {
     margin: 0.8em 0;
 }
@@ -54,7 +58,11 @@
     color: #ccc;
 }
 
-.header .picture {
+.header .picture-container {
+    padding: 2em;
+}
+
+.header .picture-container .picture {
     background: white;
     border-radius: 50%;
     box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.15);
@@ -66,10 +74,21 @@
     transition-timing-function: ease-in-out;
 }
 
-.header .picture:hover {
+.header .picture-container .picture:hover {
     transform: rotate(7deg);
 }
 
-.header .picture-container {
-    padding: 2em;
+.header .picture-container .name {
+    color: whitesmoke;
+    width: 100%;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.header .picture-container .name ruby {
+    transition-duration: 300ms;
+}
+
+.header .picture-container .name ruby:hover {
+    text-shadow: 0 0 .1em whitesmoke;
 }
