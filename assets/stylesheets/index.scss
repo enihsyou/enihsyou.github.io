@@ -1,28 +1,36 @@
-@import "../../bower_components/font-awesome/scss/font-awesome.scss";
-@import "../../bower_components/unsemantic/assets/sass/unsemantic-grid-responsive.scss";
+@import "fontawesome/fontawesome.scss";
+@import "fontawesome/fa-brands.scss";
+//@import "fontawesome/fa-regular.scss";
+@import "fontawesome/fa-solid.scss";
 @import "header.scss";
 @import "identities.scss";
 @import "chem-elements.scss";
 
-body {
-    font-size: 1em;
-    margin: 0;
-}
-
 html {
-    //background: url('../images/nat-pants.png');
+    // background: url('../images/nat-pants.png');
+    // 使用CSS生成，不用图片了
     background-image: repeating-linear-gradient(135deg,
         rgb(157, 150, 192) 0px, rgb(157, 150, 192) 35px,
         rgb(19, 19, 28) 35px, /*rgb(19, 19, 28) 36px,*/
         rgb(199, 195, 220) 36px, rgb(199, 195, 220) 70px
     );
 
-    font-family: "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", PingFangTC-Light, "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti, 黑体, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'IBM Plex Serif', "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "华文细黑", 'Noto Sans SC Sliced', "Microsoft YaHei", sans-serif;
+}
+
+body {
+    font-size: 1em;
+    margin: 0;
+}
+
+/*代码字体部分*/
+.code {
+    font-family: "Space Mono", monospace;
 }
 
 .copyright {
     background: #82629C;
-    color: #ddd;
+    color: #DDD;
     font-size: 0.9em;
     line-height: 2em;
     padding: 0.5em 1em;
@@ -31,7 +39,7 @@ html {
 
 .host {
     background: #A890BC;
-    color: #eee;
+    color: #EEE;
     font-size: 0.9em;
     padding: 0.75em 1em;
     font-weight: normal;
@@ -41,7 +49,7 @@ html {
 }
 
 .hosting {
-    color: #eee;
+    color: #EEE;
     text-decoration: none;
 }
 
@@ -56,7 +64,7 @@ html {
 }
 
 .hosting .link:hover, .theme .link:hover {
-    color: #e7d7f4;
+    color: #E7D7F4;
     transition-duration: 200ms;
 }
 

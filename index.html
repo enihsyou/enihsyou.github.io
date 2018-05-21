@@ -1,176 +1,226 @@
 <html>
 <head>
-  <link href="assets/stylesheets/index.bundle.min.css" rel="stylesheet">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' />
   <title>About enihsyou</title>
+
+  <link href='assets/stylesheets/index.bundle.css' rel='stylesheet'>
+
+  <!--为unsemantic使用CDN-->
+  <link href='https://cdn.bootcss.com/unsemantic/1.2.3/unsemantic-grid-responsive.min.css' rel='stylesheet'>
+
+  <!--加载等宽部分使用的字体-->
+  <!--https://fonts.google.com/specimen/Space+Mono-->
+  <link href='https://fonts.googleapis.com/css?family=Space+Mono' rel='stylesheet'>
+
+  <!--加载正文部分使用的中文字体-->
+  <!--https://fonts.google.com/earlyaccess#Noto+Sans+SC+Sliced-->
+  <link href='https://fonts.googleapis.com/earlyaccess/notosansscsliced.css' rel='stylesheet'>
+
+  <!--加载其他部分的英文字体-->
+  <!--https://fonts.google.com/specimen/IBM+Plex+Serif-->
+  <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif' rel='stylesheet'>
+
+  <!--支持Google收集Latency Metrics数据-->
+  <script src='https://fonts.gstatic.com/ea/timing/v1/mlfont.js' async></script>
 </head>
 <body>
-<div class="main-container">
-  <div class="section header grid-container">
-    <div class="picture-container grid-30">
-      <img class="picture" src="assets/images/amphineko.jpg">
-      <h1 class="name">
-        <ruby>九
-          <rp>(</rp>
-          <rt>Ku</rt>
-          <rp>)</rp>
-              条
-          <rp>(</rp>
-          <rt>jō</rt>
-          <rp>)</rp>
-              涼
-          <rp>(</rp>
-          <rt>Ryō</rt>
-          <rp>)</rp>
-              果
-          <rp>(</rp>
-          <rt>ka</rt>
-          <rp>)</rp>
-        </ruby></h1>
-    </div>
+<main class='main-container'>
+  <!--第一块-->
+  <section class='section header grid-container'>
+    <header class='picture-container grid-30'>
+      <figure>
+        <img class='picture' src='assets/images/enihsyou.jpg'>
+        <figcaption class='name'>
+          <ruby>九
+            <rp>(</rp>
+            <rt>Ku</rt>
+            <rp>)</rp>
+                条
+            <rp>(</rp>
+            <rt>jō</rt>
+            <rp>)</rp>
+                涼
+            <rp>(</rp>
+            <rt>Ryō</rt>
+            <rp>)</rp>
+                果
+            <rp>(</rp>
+            <rt>ka</rt>
+            <rp>)</rp>
+          </ruby>
+        </figcaption>
+      </figure>
+    </header>
 
-    <div class="grid-70">
-      <h1 class="greeting en">
-        Hey, it's <span class="no-wrap">
-            <a class="chem-element" element="potassium" href="https://en.wikipedia.org/wiki/Potassium">K</a>ujyo Ryoka
-        </span>
+    <section class='grid-70'>
+      <h1 class='greeting en user'>
+        Hey, it's <span class='no-wrap'><a class='chem-element' element='potassium' href='https://en.wikipedia.org/wiki/Potassium'>K</a>ujyo Ryoka</span>
       </h1>
 
-      <h1 class="greeting cn">
-        <small class="prefix">好耶，</small>
-        <span class="name no-wrap">是果妹 <span class="face">(&lt;ゝω·) ~☆</span></span>
+      <h1 class='greeting cn'>
+        <small class='prefix'>好耶，</small>
+        <span class='no-wrap'>是果妹 <span class='face'>(&lt;ゝω·) ~☆</span></span>
       </h1>
 
-      <div class="labels">
-        <a alt="home" class="label" href="//ryoka.moe">
-          <i aria-hidden="true" class="fa fa-map-marker"></i> <span class="title">果子窝</span>
-          <span class="link">//ryoka.moe</span>
+      <div class='labels'>
+        <a alt='home' class='label' href='https://ryoka.moe'>
+          <i aria-hidden='true' class='fas fa-map-marker'></i>
+          <span class='title'>果子窝</span>
+          <span class='link'>//ryoka.moe</span>
         </a>
-        <div alt="languages" class="label">
-          <i aria-hidden="true" class="fa fa-language"></i> <span class="title">LANG</span>
-          <span class="content">汉语 / English / 日本語</span>
+        <div alt='languages' class='label'>
+          <i aria-hidden='true' class='fa fa-language'></i>
+          <span class='title'>LANG</span>
+          <span class='content'>汉语 / English / 日本語</span>
         </div>
-        <a alt="education" class="label" href="//zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6">
-          <i aria-hidden="true" class="fa fa-university"></i> <span class="title">current</span>
-          <span class="content">USST</span>
+        <a alt='education' class='label' href='https://zh.wikipedia.org/wiki/%E4%B8%8A%E6%B5%B7%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6'>
+          <i aria-hidden='true' class='fa fa-university'></i>
+          <span class='title'>current</span>
+          <span class='content'>USST</span>
         </a>
       </div>
 
-      <div class="labels">
-        <a alt="browser" class="label" href="https://www.centbrowser.com">
-          <i aria-hidden="true" class="fa fa-chrome"></i> <span class="content">Cent Browser</span>
+      <div class='labels'>
+        <a alt='browser' class='label' href='https://centbrowser.com'>
+          <i aria-hidden='true' class='fab fa-chrome'></i>
+          <span class='content'>Cent Browser</span>
         </a>
-        <a alt="editor" class="label" href="https://www.jetbrains.com/idea">
-          <i aria-hidden="true" class="fa fa-keyboard-o"></i> <span class="content">IntelliJ IDEA</span>
+        <a alt='editor' class='label' href='https://www.jetbrains.com/idea'>
+          <i aria-hidden='true' class='fas fa-keyboard'></i>
+          <span class='content'>IntelliJ IDEA</span>
         </a>
-        <div alt="spaces or tabs" class="label">
-          <i aria-hidden="true" class="fa fa-i-cursor"></i> <span class="content">4 spaces</span>
+        <div alt='spaces or tabs' class='label'>
+          <i aria-hidden='true' class='fas fa-i-cursor'></i>
+          <span class='content'>4 spaces</span>
         </div>
-        <div alt="platforms" class="label">
-          <i aria-hidden="true" class="fa fa-windows"></i> <span class="content">10</span>
-          <i aria-hidden="true" class="fa fa-linux"></i> <span class="content">Ubuntu</span>
-          <i aria-hidden="true" class="fa fa-android"></i> <span class="content">Nougat</span>
+        <div alt='platforms' class='label'>
+          <i aria-hidden='true' class='fab fa-windows'></i>
+          <span class='content'>10</span>
+          <i aria-hidden='true' class='fab fa-linux'></i>
+          <span class='content'>Ubuntu</span>
+          <i aria-hidden='true' class='fab fa-android'></i>
+          <span class='content'>Nougat</span>
         </div>
-        <div alt="programing language" class="label">
-          <i aria-hidden="true" class="fa fa-terminal"></i> <span class="content">Kotlin / Python3</span>
+        <div alt='programing language' class='label'>
+          <i aria-hidden='true' class='fa fa-terminal'></i>
+          <span class='content'>Kotlin / Python3</span>
         </div>
-        <a alt="pgp key" class="label" href="https://keybase.io/enihsyou/pgp_keys.asc?fingerprint=b64697edf5748ad399c86c24496810a30e30c569">
-          <i aria-hidden="true" class="fa fa-shield"></i>
-          <span class="content">B646 97ED F574 8AD3 99C8 6C24 4968 10A3 0E30 C569</span>
+        <a alt='pgp key' class='label' href='https://keybase.io/enihsyou/pgp_keys.asc?fingerprint=b64697edf5748ad399c86c24496810a30e30c569'>
+          <i aria-hidden='true' class='fas fa-lock'></i>
+          <span class='content code'>B646 97ED F574 8AD3 99C8 6C24 4968 10A3 0E30 C569</span>
         </a>
-        <a alt="ssh key" class="label" href="enihsyou.pub">
-          <i aria-hidden="true" class="fa fa-handshake-o"></i>
-          <span class="content">SHA256:JlA7Jdf3cwPVqLk13G9IXJrpDLKjSyf2+2Jl+SX6vtQ</span>
+        <a alt='ssh key' class='label' href='enihsyou.pub'>
+          <i aria-hidden='true' class='fas fa-key'></i>
+          <span class='content code'>SHA256:JlA7Jdf3cwPVqLk13G9IXJrpDLKjSyf2+2Jl+SX6vtQ</span>
         </a>
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
 
-  <div class="section identity-category grid-container">
-    <h2 class="title">
-      <i aria-hidden="true" class="fa fa-chevron-right"></i> enihsyou <span class="no-wrap">
-                        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i><del>noob</del></small>
-                        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>programmer</small></span>
-    </h2>
-    <ul class="identities grid-50">
-      <li class="identity">
-        <a href="https://github.com/enihsyou">
-          <i aria-hidden="true" class="fa fa-github"></i> <span class="where">github</span>
-          <span class="link">@enihsyou</span>
-        </a>
-      </li>
-      <li class="identity">
-        <a href="https://keybase.io/enihsyou">
-          <i aria-hidden="true" class="fa fa-key"></i> <span class="where">keybase</span>
-          <span class="link">@enihsyou</span>
-        </a>
-      </li>
-    </ul>
-    <ul class="identities grid-50">
-
-      <li class="identity">
-        <a href="https://telegram.me/enihsyou">
-          <i aria-hidden="true" class="fa fa-telegram"></i> <span class="where">telegram</span>
-          <span class="link">@enihsyou</span>
-        </a>
-      </li>
-      <li class="identity">
-        <a href="https://twitter.com/enihsyou">
-          <i aria-hidden="true" class="fa fa-twitter"></i> <span class="where">twitter</span>
-          <span class="link">@enihsyou</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <div class="section identity-category grid-container">
-    <h2 class="title">
-      <i aria-hidden="true" class="fa fa-chevron-right"></i> 九条涼果
-      <span class="no-wrap">
-        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i><del>gingham check</del></small>
-        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i><del>otaku</del></small>
-        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>simulation</small>
-        <small class="tag"><i aria-hidden="true" class="fa fa-tag"></i>boyfriend</small>
+  <!--第二块-->
+  <div class='grid-container section identity-category'>
+    <h2 class='title'>
+      <i aria-hidden='true' class='fas fa-chevron-right tilt'></i>
+      enihsyou
+      <span class='no-wrap'>
+        <small class='tag'><i aria-hidden='true' class='fas fa-tag'></i>programmer</small>
       </span>
     </h2>
-    <ul class="identities grid-50">
-      <li class="identity">
-        <a href="https://bgm.tv/user/kacyan">
-          <i aria-hidden="true" class="fa fa-wheelchair-alt"></i> <span class="where">bangumi</span> <span class="link">九条涼果
+
+    <ul class='identities grid-50'>
+      <li class='identity'>
+        <a href='https://github.com/enihsyou'>
+          <i aria-hidden='true' class='fab fa-github'></i>
+          <span class='where'>github</span>
+          <span class='link'>@enihsyou</span>
+        </a>
+      </li>
+      <li class='identity'>
+        <a href='https://keybase.io/enihsyou'>
+          <i aria-hidden='true' class='fab fa-keybase'></i>
+          <span class='where'>keybase</span>
+          <span class='link'>@enihsyou</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class='identities grid-50'>
+      <li class='identity'>
+        <a href='https://telegram.me/enihsyou'>
+          <i aria-hidden='true' class='fab fa-telegram'></i>
+          <span class='where'>telegram</span>
+          <span class='link'>@enihsyou</span>
+        </a>
+      </li>
+      <li class='identity'>
+        <a href='https://twitter.com/enihsyou'>
+          <i aria-hidden='true' class='fab fa-twitter'></i>
+          <span class='where'>twitter</span>
+          <span class='link'>@enihsyou</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--第三块-->
+  <div class='section identity-category grid-container'>
+    <h2 class='title'>
+      <i aria-hidden='true' class='fa fa-chevron-right tilt'></i>
+      九条涼果 <span class='no-wrap'>
+        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i><del>otaku</del></small>
+        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i>gingham check</small>
+        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i>boyfriend</small>
+      </span>
+    </h2>
+
+    <ul class='identities grid-50'>
+      <li class='identity'>
+        <a href='https://bgm.tv/user/kacyan'>
+          <i aria-hidden='true' class='fab fa-accessible-icon'></i>
+          <span class='where'>bangumi</span> <span class='link'>九条涼果
         </span>
         </a>
       </li>
-      <li class="identity">
-        <a href="https://steamcommunity.com/id/enihsyou">
-          <i aria-hidden="true" class="fa fa-steam"></i> <span class="where">steam</span> <span class="link">九条涼果</span>
+      <li class='identity'>
+        <a href='https://steamcommunity.com/id/enihsyou'>
+          <i aria-hidden='true' class='fab fa-steam'></i>
+          <span class='where'>steam</span> <span class='link'>九条涼果</span>
         </a>
       </li>
     </ul>
-    <ul class="identities grid-50">
-      <li class="identity">
-        <a href="https://plus.google.com/u/0/108566891153597019822">
-          <i aria-hidden="true" class="fa fa-google-plus"></i> <span class="where">google plus</span>
-          <span class="link">+九条涼果</span>
+
+    <ul class='identities grid-50'>
+      <li class='identity'>
+        <a href='https://plus.google.com/u/0/108566891153597019822'>
+          <i aria-hidden='true' class='fab fa-google-plus'></i>
+          <span class='where'>google plus</span>
+          <span class='link'>+九条涼果</span>
         </a>
       </li>
-      <li class="identity">
-        <a href="https://www.last.fm/user/guoka">
-          <i aria-hidden="true" class="fa fa-lastfm"></i> <span class="where">last.fm</span>
-          <span class="link">guoka</span>
+      <li class='identity'>
+        <a href='https://www.last.fm/user/guoka'>
+          <i aria-hidden='true' class='fab fa-lastfm'></i>
+          <span class='where'>last.fm</span>
+          <span class='link'>guoka</span>
         </a>
       </li>
     </ul>
   </div>
-  <div class="section">
-    <div class="host">
-      <a class="hosting" href="//ryoka.moe"><i aria-hidden="true" class="fa fa-heart-o"></i> Hosted by
-        <span class="shake shake-hard">格子窝</span> <span class="link">//ryoka.moe</span></a>
-      <span class="theme">Theme by <a class="link" href="https://github.com/amphineko/amphineko">amphineko</a></span>
+
+  <!--第四块-->
+  <footer class='section'>
+    <div class='host'>
+      <a class='hosting' href='https://enihsyou.com'>
+        <i aria-hidden='true' class='fa fa-heart-o'></i>
+        Hosted by<span class='shake shake-hard'>格子窝</span> <span class='link'>//enihsyou.com</span>
+      </a>
+      <span class='theme'>Theme by <a class='link' href='https://github.com/amphineko/amphineko'>amphineko</a></span>
     </div>
-    <div class="copyright">
+    <div class='copyright'>
       Copyright © 2015-2018 Kujyo Ryoka. Illustrations have their own licenses.
     </div>
-  </div>
-</div>
+  </footer>
+</main>
 </body>
 </html>

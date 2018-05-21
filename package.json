@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "",
   "main": "gulpfile.js",
+  "keywords": ["home"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/enihsyou/enihsyou.github.io.git"
@@ -10,13 +11,14 @@
   "author": "Kujyo Ryoka <enihsyou@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/enihsyou/enihsyou.github.io/issues"
+    "url": "https://github.com/enihsyou/enihsyou.github.io/issues",
+    "email": "enihsyou@gmail.com"
   },
   "homepage": "https://enihsyou.github.com",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^3.2.1"
   }
 }
