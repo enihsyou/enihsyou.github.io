@@ -4,7 +4,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' />
   <title>About enihsyou</title>
 
-  <link href='assets/stylesheets/index.bundle.css' rel='stylesheet'>
+  <!--加载个人CSS-->
+  <link href='assets/stylesheets/index.bundle.min.css' rel='stylesheet'>
 
   <!--为unsemantic使用CDN-->
   <link href='https://cdn.bootcss.com/unsemantic/1.2.3/unsemantic-grid-responsive.min.css' rel='stylesheet'>
@@ -20,37 +21,32 @@
   <!--加载其他部分的英文字体-->
   <!--https://fonts.google.com/specimen/IBM+Plex+Serif-->
   <link href='https://fonts.googleapis.com/css?family=IBM+Plex+Serif' rel='stylesheet'>
-
-  <!--支持Google收集Latency Metrics数据-->
-  <script src='https://fonts.gstatic.com/ea/timing/v1/mlfont.js' async></script>
 </head>
 <body>
 <main class='main-container'>
   <!--第一块-->
-  <section class='section header grid-container'>
+  <section class='header section grid-container'>
     <header class='picture-container grid-30'>
-      <figure>
-        <img class='picture' src='assets/images/enihsyou.jpg'>
-        <figcaption class='name'>
-          <ruby>九
-            <rp>(</rp>
-            <rt>Ku</rt>
-            <rp>)</rp>
-                条
-            <rp>(</rp>
-            <rt>jō</rt>
-            <rp>)</rp>
-                涼
-            <rp>(</rp>
-            <rt>Ryō</rt>
-            <rp>)</rp>
-                果
-            <rp>(</rp>
-            <rt>ka</rt>
-            <rp>)</rp>
-          </ruby>
-        </figcaption>
-      </figure>
+      <img class='picture' src='assets/images/enihsyou.jpg'>
+      <h1 class='name'>
+        <ruby>九
+          <rp>(</rp>
+          <rt>Ku</rt>
+          <rp>)</rp>
+              条
+          <rp>(</rp>
+          <rt>jō</rt>
+          <rp>)</rp>
+              涼
+          <rp>(</rp>
+          <rt>Ryō</rt>
+          <rp>)</rp>
+              果
+          <rp>(</rp>
+          <rt>ka</rt>
+          <rp>)</rp>
+        </ruby>
+      </h1>
     </header>
 
     <section class='grid-70'>
@@ -67,7 +63,7 @@
         <a alt='home' class='label' href='https://ryoka.moe'>
           <i aria-hidden='true' class='fas fa-map-marker'></i>
           <span class='title'>果子窝</span>
-          <span class='link'>//ryoka.moe</span>
+          <span class='content'>//ryoka.moe</span>
         </a>
         <div alt='languages' class='label'>
           <i aria-hidden='true' class='fa fa-language'></i>
@@ -124,7 +120,7 @@
       <i aria-hidden='true' class='fas fa-chevron-right tilt'></i>
       enihsyou
       <span class='no-wrap'>
-        <small class='tag'><i aria-hidden='true' class='fas fa-tag'></i>programmer</small>
+        <small class='tag'><i aria-hidden='true' class='fas fa-hashtag'></i> programmer</small>
       </span>
     </h2>
 
@@ -168,9 +164,9 @@
     <h2 class='title'>
       <i aria-hidden='true' class='fa fa-chevron-right tilt'></i>
       九条涼果 <span class='no-wrap'>
-        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i><del>otaku</del></small>
-        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i>gingham check</small>
-        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i>boyfriend</small>
+        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i> <del>otaku</del></small>
+        <small class='tag'><i aria-hidden='true' class='fa fa-tag'></i> boyfriend</small>
+        <small class='tag'><i aria-hidden='true' class='fa fa-hashtag'></i> gingham check</small>
       </span>
     </h2>
 
@@ -212,8 +208,8 @@
   <footer class='section'>
     <div class='host'>
       <a class='hosting' href='https://enihsyou.com'>
-        <i aria-hidden='true' class='fa fa-heart-o'></i>
-        Hosted by<span class='shake shake-hard'>格子窝</span> <span class='link'>//enihsyou.com</span>
+        <i aria-hidden='true' class='fas fa-heart'></i>
+        Hosted by <span class='shake shake-hard'>格子窝</span> <span class='link'>//enihsyou.com</span>
       </a>
       <span class='theme'>Theme by <a class='link' href='https://github.com/amphineko/amphineko'>amphineko</a></span>
     </div>

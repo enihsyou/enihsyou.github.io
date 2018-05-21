@@ -1,26 +1,23 @@
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/fa-brands.scss";
-//@import "fontawesome/fa-regular.scss";
 @import "fontawesome/fa-solid.scss";
 @import "header.scss";
 @import "identities.scss";
 @import "chem-elements.scss";
+@import "variables";
 
 html {
-    // background: url('../images/nat-pants.png');
-    // 使用CSS生成，不用图片了
+    // https://css-tricks.com/html-vs-body-in-css/#article-header-id-4
     background-image: repeating-linear-gradient(135deg,
-        rgb(157, 150, 192) 0px, rgb(157, 150, 192) 35px,
-        rgb(19, 19, 28) 35px, /*rgb(19, 19, 28) 36px,*/
-        rgb(199, 195, 220) 36px, rgb(199, 195, 220) 70px
+        rgb(157, 150, 192) 0em, rgb(157, 150, 192) 2.45em,
+        rgb(19, 19, 28) 2.45em, rgb(17, 17, 26) 2.52em,
+        rgb(199, 195, 220) 2.55em, rgb(199, 195, 220) 5em
     );
-
-    font-family: 'IBM Plex Serif', "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "华文细黑", 'Noto Sans SC Sliced', "Microsoft YaHei", sans-serif;
+    font-size: 1em;
 }
 
 body {
-    font-size: 1em;
-    margin: 0;
+    font-family: 'IBM Plex Serif', "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "华文细黑", 'Noto Sans SC Sliced', "Microsoft YaHei", sans-serif;
 }
 
 /*代码字体部分*/
@@ -28,9 +25,11 @@ body {
     font-family: "Space Mono", monospace;
 }
 
+/*Footer*/
+
 .copyright {
     background: #82629C;
-    color: #DDD;
+    color: $level3-text-color;
     font-size: 0.9em;
     line-height: 2em;
     padding: 0.5em 1em;
@@ -39,7 +38,7 @@ body {
 
 .host {
     background: #A890BC;
-    color: #EEE;
+    color: $level2-text-color;
     font-size: 0.9em;
     padding: 0.75em 1em;
     font-weight: normal;
@@ -49,7 +48,7 @@ body {
 }
 
 .hosting {
-    color: #EEE;
+    color: $level2-text-color;
     text-decoration: none;
 }
 
@@ -61,11 +60,10 @@ body {
     color: #CEBFDA;
     text-decoration: none;
     transition-duration: 200ms;
-}
 
-.hosting .link:hover, .theme .link:hover {
-    color: #E7D7F4;
-    transition-duration: 200ms;
+    &:hover {
+        color: #E7D7F4;
+    }
 }
 
 .main-container {
@@ -82,34 +80,30 @@ body {
     margin: 1em 0;
 }
 
-.identity .where {
-    text-transform: capitalize;
-}
 
-.fa-heart-o {
-    transition-duration: 150ms;
-}
-
-.fa-heart-o:hover {
-    color: palevioletred;
-    transition-duration: 150ms;
+.fa-heart {
+    font-size: 1.2em;
+    margin-right: 0.1em;
+    color: white;
+    transition-duration: 250ms;
+    &:hover {
+        color: #F77FA6;
+        text-shadow: 0 0 0.7em #F77FA6;
+    }
 }
 
 .shake {
     display: inline-block;
-    transform-origin: center center
+    transform-origin: center center;
+    animation-play-state: paused !important;
+
+    &:hover {
+        animation-play-state: running !important;
+    }
 }
 
-.shake.freez {
-    animation-play-state: paused !important
-}
-
-.shake.freez:hover {
-    animation-play-state: running !important
-}
-
-.shake.freez.shake-hard, .shake.shake-hard:hover {
-    animation: shake-hard 200ms ease-in-out 0s infinite running
+.shake.shake-hard:hover {
+    animation: shake-hard 233ms ease-in-out 0s infinite running
 }
 
 @keyframes shake-hard {

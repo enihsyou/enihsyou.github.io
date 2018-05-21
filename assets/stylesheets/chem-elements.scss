@@ -5,11 +5,12 @@
     background: rgba(255, 163, 163, .09);
     border-radius: .25em;
     box-shadow: 0 0 0.1em 0.1em rgba(0, 0, 0, .05);
-    color: $text-color;
+    color: $level1-text-color;
     line-height: 0.7em;
-    padding: .30em .20em .15em .2em;
+    padding: .30em .15em .15em .2em;
     margin-right: .1em;
     transition-duration: 500ms;
+    text-decoration: none;
 
     &:hover {
         transform: scale(1.1, 1.1);
@@ -21,6 +22,7 @@
         font-size: .45em;
         vertical-align: -.5em;
     }
+
     &[element="potassium"]:hover {
         background: rgba(190, 161, 157, 0.45);
     }

@@ -7,6 +7,9 @@ const cleanCss = require('gulp-clean-css');
 gulp.task('watch', ['default'], function() {
     gulp.watch('./assets/stylesheets/**/*.scss', ['stylesheet']);
 });
+gulp.task('light_watch', ['default'], function() {
+    gulp.watch('./assets/stylesheets/**/*.scss', ['stylesheet_light']);
+});
 
 gulp.task('default', ['stylesheet']);
 
@@ -18,4 +21,11 @@ gulp.task('stylesheet', function() {
         .pipe(cleanCss())
         .pipe(rename('index.bundle.min.css'))
         .pipe(gulp.dest('./assets/stylesheets/'));
+});
+
+gulp.task('stylesheet_light', function() {
+    return gulp.src('./assets/stylesheets/index.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(rename('index.bundle.css'))
+        .pipe(gulp.dest('./assets/stylesheets/'))
 });

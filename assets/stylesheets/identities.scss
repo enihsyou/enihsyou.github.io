@@ -1,70 +1,81 @@
-.identity {
-    border-bottom: 0.15em solid rgba(0, 0, 0, 0.035);
-    display: block;
-    line-height: 1.2em;
-    margin: 0.4em auto;
-    padding: 0.4em;
-    position: relative;
-    width: 90%;
-
-    * {
-        vertical-align: middle;
-    }
-
-    a {
-        display: block;
-        text-decoration: none;
-    }
-
-    i {
-        transition-duration: 400ms;
-        transition-timing-function: ease-in-out;
-        &:hover {
-            color: #000;
-        }
-    }
-    .link {
-        bottom: 0.5em;
-        color: #216199;
-        display: inline-block;
-        position: absolute;
-        right: 0.45em;
-        text-align: right;
-    }
-    .fab {
-        color: rgba(0, 10, 25, 0.65);
-        font-size: 1.6em;
-        text-align: center;
-        width: 1.5em;
-    }
-    .where {
-        color: #333;
-    }
-}
-
-.identities {
-    margin: 0;
-    padding: 0;
-}
-
+/*一个大块*/
 .identity-category {
-    background: rgba(255, 255, 255, 0.975);
+    background-color: rgba(255, 255, 255, 0.975);
     padding-bottom: 1.6em;
     padding-top: 1em;
 
+    /*首行题头*/
     .title {
         font-weight: 300;
         line-height: 2em;
         margin: 0;
 
         .tag {
+            margin-left: 0.2em;
             font-size: 0.75em;
         }
 
+        /*稍微旋转箭头图标*/
         .tilt {
             color: #AAA;
             margin: 0 0.2em;
             transform: rotateZ(-23deg);
+        }
+    }
+
+    .identities {
+        margin: 0;
+        padding: 0;
+
+        .identity {
+            border-bottom: 0.15em solid rgba(0, 0, 0, 0.035);
+            display: block;
+            line-height: 1.4em;
+            margin: 0.4em auto;
+            padding: 0.4em;
+            position: relative;
+            width: 90%;
+
+            * {
+                vertical-align: middle;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            /*图标*/
+            i {
+                transition-duration: 400ms;
+                transition-timing-function: ease-in-out;
+                &:hover {
+                    color: #000;
+                }
+            }
+
+            .fab {
+                color: rgba(0, 10, 25, 0.65);
+                font-size: 1.6em;
+                text-align: center;
+                width: 1.5em;
+
+            }
+
+            /*站点标签*/
+            .where {
+                text-transform: capitalize;
+                color: #333;
+            }
+
+            /*站点链接*/
+            .link {
+                bottom: 0.5em;
+                color: #216199;
+                display: inline-block;
+                position: absolute;
+                right: 0.45em;
+                text-align: right;
+            }
         }
     }
 }

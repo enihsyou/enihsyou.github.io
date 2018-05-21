@@ -1,97 +1,96 @@
+@import "variables";
+
 .header {
     background: #4A4757;
     padding-top: 1.6em;
-}
 
-.header .greeting {
-    color: #F5F5F5;
-    font-weight: 300;
-    line-height: 1.6em;
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
-}
-
-.header .greeting .chem-element {
-    text-decoration: none;
-}
-
-/*右侧标签部分*/
-.header .labels {
-    margin: 0.8em 0;
-}
-
-.header .labels .label {
-    background: #333;
-    box-shadow: 0 0 0.15em 0.1em rgba(0, 0, 0, 0.15);
-    color: #FFF;
-    display: inline-block;
-    font-weight: 300;
-    padding: .5em .75em;
-    position: relative;
-    margin: 1.2em 0;
-    vertical-align: bottom;
-    transition-duration: 200ms;
-
-    &:hover {
-        box-shadow: 0 0 2em #333333;
-    }
-
-    &:before {
-        color: #DDD;
-        content: attr(alt);
-        font-size: .75em;
-        left: 0;
-        position: absolute;
+    .greeting {
+        font-size: 2em;
+        color: #F5F5F5;
+        font-weight: 300;
+        line-height: 1.6em;
+        margin: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
-        top: -1.75em;
     }
-}
 
-.header .labels a.label {
-    text-decoration: none;
-}
+    /*右侧标签部分*/
+    .labels {
+        margin: 0.4em 0;
 
-.header .labels .label > * {
-    margin-right: .25em;
-}
+        .label {
+            background: #333;
+            box-shadow: 0 0 0.15em 0.1em rgba(0, 0, 0, 0.15);
+            color: #EEE;
+            display: inline-block;
+            font-weight: 300;
+            padding: .5em .75em;
+            position: relative;
+            margin: 1.2em 0;
+            vertical-align: bottom;
+            transition-duration: 200ms;
+            text-decoration: none;
+            margin-right: .25em;
 
-.header .labels .label .content {
-    color: #CCC;
-}
+            /*上方的标注*/
+            &:before {
+                color: #DDD;
+                content: attr(alt);
+                font-size: .75em;
+                left: 0;
+                position: absolute;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
+                top: -1.75em;
+            }
 
-.header .picture-container {
-    padding: 2em;
-}
+            &:hover {
+                box-shadow: 0 0 2em #333333;
+            }
 
-/*头像部分*/
-.header .picture-container .picture {
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.15);
-    box-sizing: content-box;
-    display: block;
-    padding: 3%;
-    width: 94%;
-    transition-duration: 100ms;
-    transition-timing-function: ease-in-out;
-}
+            .title {
+                margin-left: 0.25em;
+            }
 
-.header .picture-container .picture:hover {
-    transform: rotate(7deg);
-}
+            .content {
+                margin-left: 0.25em;
+                color: #CCC;
+            }
+        }
+    }
 
-/*名字部分*/
-.header .picture-container .name {
-    color: whitesmoke;
-    width: 100%;
-    margin-top: 1em;
-    text-align: center;
-}
+    /*头像部分*/
+    .picture-container {
+        padding: 1.5em;
+        vertical-align: middle;
 
-.header .picture-container .name ruby {
-    transition-duration: 300ms;
-}
+        .picture {
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.15);
+            box-sizing: content-box;
+            display: block;
+            padding: 3%;
+            width: 94%;
+            transition-duration: 100ms;
+            transition-timing-function: ease-in-out;
 
-.header .picture-container .name ruby:hover {
-    text-shadow: 0 0 .1em whitesmoke;
+            &:hover {
+                transform: rotate(7deg);
+            }
+        }
+        /*名字部分*/
+        .name {
+            color: whitesmoke;
+            margin-top: 1em;
+            text-align: center;
+            font-size: 2em;
+
+            ruby {
+                transition-duration: 300ms;
+
+                &:hover {
+                    text-shadow: 0 0 .1em whitesmoke;
+                }
+            }
+        }
+    }
 }
