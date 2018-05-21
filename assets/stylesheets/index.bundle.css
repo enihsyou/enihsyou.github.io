@@ -3187,12 +3187,12 @@ readers do not read off random characters that represent icons */
 .header {
   background: #4A4757;
   padding-top: 1.6em;
+  font-weight: 500;
   /*右侧标签部分*/
   /*头像部分*/ }
   .header .greeting {
     font-size: 2em;
     color: #F5F5F5;
-    font-weight: 300;
     line-height: 1.6em;
     margin: 0;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); }
@@ -3202,8 +3202,8 @@ readers do not read off random characters that represent icons */
       background: #333;
       box-shadow: 0 0 0.15em 0.1em rgba(0, 0, 0, 0.15);
       color: #EEE;
+      max-width: 95%;
       display: inline-block;
-      font-weight: 300;
       padding: .5em .75em;
       position: relative;
       margin: 1.2em 0;
@@ -3333,14 +3333,16 @@ readers do not read off random characters that represent icons */
 
 html {
   background-image: repeating-linear-gradient(135deg, #9d96c0 0em, #9d96c0 2.45em, #13131c 2.45em, #11111a 2.52em, #c7c3dc 2.55em, #c7c3dc 5em);
-  font-size: 1em; }
+  font-size: 1em;
+  font-weight: 500; }
 
 body {
   font-family: 'IBM Plex Serif', "思源黑体", "Noto Sans", "Noto Sans CJK SC", "文泉驿微米黑", "WenQuanYi Micro Hei", "方正兰亭黑", "华文细黑", 'Noto Sans SC Sliced', "Microsoft YaHei", sans-serif; }
 
 /*代码字体部分*/
 .code {
-  font-family: "Space Mono", monospace; }
+  font-family: "Space Mono", monospace;
+  word-wrap: break-word; }
 
 /*Footer*/
 .copyright {

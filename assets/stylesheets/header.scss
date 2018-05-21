@@ -3,11 +3,11 @@
 .header {
     background: #4A4757;
     padding-top: 1.6em;
+    font-weight: 500;
 
     .greeting {
         font-size: 2em;
         color: #F5F5F5;
-        font-weight: 300;
         line-height: 1.6em;
         margin: 0;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, .25);
@@ -21,8 +21,8 @@
             background: #333;
             box-shadow: 0 0 0.15em 0.1em rgba(0, 0, 0, 0.15);
             color: #EEE;
+            max-width: 95%;
             display: inline-block;
-            font-weight: 300;
             padding: .5em .75em;
             position: relative;
             margin: 1.2em 0;

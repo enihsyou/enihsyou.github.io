@@ -14,6 +14,7 @@ html {
         rgb(199, 195, 220) 2.55em, rgb(199, 195, 220) 5em
     );
     font-size: 1em;
+    font-weight: 500;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 /*代码字体部分*/
 .code {
     font-family: "Space Mono", monospace;
+    word-wrap: break-word;
 }
 
 /*Footer*/
