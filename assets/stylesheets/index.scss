@@ -25,16 +25,20 @@ body {
 .code {
     font-family: "Space Mono", monospace;
     word-wrap: break-word;
+    word-break: break-all;
+    /*http://www.zhangxinxu.com/wordpress/2015/11/diff-word-break-break-all-word-wrap-break-word/*/
+
+    // todo fixme
 }
 
 /*Footer*/
-
 .copyright {
     background: #82629C;
     color: $level3-text-color;
     font-size: 0.9em;
     line-height: 2em;
     padding: 0.5em 1em;
+    word-break: normal;
     clear: both;
 }
 
@@ -43,7 +47,7 @@ body {
     color: $level2-text-color;
     font-size: 0.9em;
     padding: 0.75em 1em;
-    font-weight: normal;
+    // font-weight: normal;
     display: flex;
     justify-content: space-between;
     text-decoration: none;
