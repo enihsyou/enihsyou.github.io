@@ -3260,7 +3260,6 @@ readers do not read off random characters that represent icons */
   padding-top: 1em;
   /*首行题头*/ }
   .identity-category .title {
-    font-weight: 300;
     line-height: 2em;
     margin: 0;
     /*稍微旋转箭头图标*/ }
@@ -3342,7 +3341,9 @@ body {
 /*代码字体部分*/
 .code {
   font-family: "Space Mono", monospace;
-  word-wrap: break-word; }
+  word-wrap: break-word;
+  word-break: break-all;
+  /*http://www.zhangxinxu.com/wordpress/2015/11/diff-word-break-break-all-word-wrap-break-word/*/ }
 
 /*Footer*/
 .copyright {
@@ -3351,6 +3352,7 @@ body {
   font-size: 0.9em;
   line-height: 2em;
   padding: 0.5em 1em;
+  word-break: normal;
   clear: both; }
 
 .host {
@@ -3358,7 +3360,6 @@ body {
   color: #EEE;
   font-size: 0.9em;
   padding: 0.75em 1em;
-  font-weight: normal;
   display: flex;
   justify-content: space-between;
   text-decoration: none; }
