@@ -3260,6 +3260,7 @@ readers do not read off random characters that represent icons */
   padding-top: 1em;
   /*首行题头*/ }
   .identity-category .title {
+    font-weight: 500;
     line-height: 2em;
     margin: 0;
     /*稍微旋转箭头图标*/ }
